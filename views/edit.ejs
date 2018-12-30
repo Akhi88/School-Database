@@ -1,0 +1,9 @@
+<!--Edit form  -->
+
+<form action="/studentlist/<%= data._id %>?_method=PUT" method="POST">
+<!--data[] create a pseudo array called 'data' that has a Name, Class, and Section atttribute, ?_method=PUT because HTML doesnt support PUT methods so we're using a method override (workaround with express) OVERRIDES THE ORIGINAL METHOD INTO THIS ONE W UNDERSCORE-->
+<input type="text" name=data[name] value="<%= data.name%>">
+<input type="text" name=data[class] value="<%= data.class %>">
+<input type="text" name=data[section] value="<%=data.section%>">
+<input type="submit">
+</form>

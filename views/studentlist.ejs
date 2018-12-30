@@ -1,0 +1,13 @@
+
+  <h1>Student List</h1>
+      <% datas.forEach(function(data){ %>
+  <li>  <%= data.name %>                        <!--Displays info of each Student -->
+    <%= data.class %>
+    <%= data.section %>
+<a href="/studentlist/<%=data._id %>">Read More</a>
+    <% })%>
+
+</li>
+
+
+    <a href="/studentlist/new">Create New Student</a>

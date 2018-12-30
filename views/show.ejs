@@ -1,0 +1,14 @@
+<h1>Following  is the info of <%= data.name %></h1>     <!-- Displays info of a particular student-->
+<li>
+  <%= data.name %>
+  <%= data.class %>
+  <%= data.section %>
+</li>
+<div>
+<a href="/studentlist"> <button>Go back</button> </a>
+<a href="/studentlist/<%= data._id %>/edit"><button>Edit</button></a>       <!--Edit Info Of Student -->
+
+<form action="/studentlist/<%= data._id %>?_method=DELETE" method="POST">   <!--Delete Info Of Student -->
+				<button>Delete</button>
+</form>
+</div>
